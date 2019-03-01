@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sample Form</h1>
+            <form>
+                <div class="form-group">
+                    <label for="nickname">Nickname</label>
+                    <input type="text" class="form-control" id="nickname" placeholder="Enter Nickname">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+
+                <!-- gender select menu -->
+                <label for="radio">Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="male" value="option1" >
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="female" value="option1" >
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check">
+                        <input class="form-check-input" type="radio" id="other" value="option1" >
+                        <label class="form-check-label" for="other">Other</label>
+                </div>
+                <div class="form-check">
+                        <input class="form-check-input" type="radio" id="pnts" value="option1" >
+                        <label class="form-check-label" for="pnts">Prefer Not to Say</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="security">Security Question</label>
+                    <select class="form-control" id="security">
+                        <option value="" selected disabled>Please select</option>
+                        <option>What is your name?</option>
+                        <option>What is your quest?</option>
+                        <option>What is your favorite color?</option>
+                        <option>What is the airspeed velocity of an unladen swallow?</option>
+                    </select>
+                    <label for="answer">Answer</label>
+                    <input type="text" class="form-control" id="answer" placeholder="Security Question Answer">
+                </div>
+
+                <label for="proglangs">Favorite Programming Languages</label>
+                <div class="form-check" id="proglangs">
+                    <input type="checkbox" value="C" id="C">
+                    <label for="C">C/C++</label></br>
+
+                    <input type="checkbox" value="Java" id="java">
+                    <label for="java">Java</label><br>
+
+                    <input type="checkbox" value="Javascript" id="javascript">
+                    <label for="javascript">Javascript</label><br>
+
+                    <input type="checkbox" value="Python" id="python">
+                    <label for="python">Python</label><br>
+
+                    <input type="checkbox" value="GO" id="go">
+                    <label for="go">GO</label><br>
+
+                    <input type="checkbox" value="C#" id="c#">
+                    <label for="c#">C#</label><br>
+
+                    <input type="checkbox" value="PHP" id="php">
+                    <label for="php">PHP</label><br>
+                </div>
+                
+                <label for="add_info">Additional Information</label><br>
+                <div class="form-check">
+                    <small><label for="about">About Me</label></small>
+                    <textarea class="form-control" id="about" rows="3"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+<html>
