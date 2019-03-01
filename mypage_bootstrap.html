@@ -1,44 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>About Me</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>Arugonda, Vamshi</h1>
-        <p>
-            1. I'm in the top 10 for collegiate sailors in Colorado (there's only about 10 of us)</br>
-            2. I collect Monopoly Boards, I have over 20</br>
-            3. I can solve a Rubik's cube in about 30 seconds</br>
-            </br>
-            I'm studying computer science because I enjoy puzzles! Comp Sci, to me, is a lot of debugging which is basically just solving puzzles.</br>
-            Coding is also the closest we can get to creating in the most open-ended sense of the word. I enjoy being able to sit down and make just about anything.
-        </p>
-
+        <h1 class ="text-dark">Arugonda, Vamshi<small><small class="small text-muted">- Software Development Tools and Methods</small></small></h1>
+        <div class="card text-black bg-light mb-3">    
+            <p>
+                I'm studying computer science because I enjoy puzzles! Comp Sci, to me, is a lot of debugging which is basically just solving puzzles.
+                Coding is also the closest we can get to creating in the most open-ended sense of the word. I enjoy being able to sit down and make just about anything.
+                <br>
+                <br>
+                Facts about me: <br>
+                - I'm in the top 10 for collegiate sailors in Colorado (there's only about 10 of us)</br>
+                - I collect Monopoly Boards, I have over 20</br>
+                - I can solve a Rubik's cube in about 30 seconds</br>
+            </p>
+        </div>
         <h2>My Professional Profile</h2>
-        <a href="https://github.com/varugonda">Vamshi's GitHub</a></br>
-        <img src="me.jpg" alt="A picture of Vamshi Arugonda in a suit" width=500px>
-    
+        <button type="button" class="btn btn-outline-primary"><a href="https://github.com/varugonda">Vamshi's GitHub</a></button>
+        <!-- <a href="https://github.com/varugonda">Vamshi's GitHub</a></br> -->
+        <br>
+        <img src="me.jpg" alt="A picture of Vamshi Arugonda in a suit" width=500px class="rounded-circle">
+        <br><br>
         <h3>My Favorite Projects</h3>
-        <table>
-            <tr>
-                <th>Name of the Project</th>
-                <th>Technologies Used</th> 
-            </tr>
-            <tr>
-                <td>Multi-Threading</td>
-                <td>C</td> 
-            </tr>
-            <tr>
-                <td>FAKENOOZ</td>
-                <td>Create-React-App</td> 
-            </tr>
-            <tr>
-                <td>Boston Uber Metrics</td>
-                <td>Python (Machine Learning)</td> 
-            </tr>
-        </table>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Name of the Project</th>
+                    <th>Technologies Used</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Multi-Threading</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>FAKENOOZ</td>
+                    <td>Create-React-App</td> 
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Boston Uber Metrics</td>
+                    <td>Python (Machine Learning)</td> 
+                </tr>
+            </tbody>
+            </table>
 
-        <h3>Countries Traveled</h3>
+
+        <!-- <h3>Countries Traveled</h3>
         <ul>
             <li>India</li>
             <li>Germany</li>
@@ -51,6 +70,63 @@
             <li>Sailing</li>
             <li>Camping</li>
             <li>Model United Nations</li>
-        </ol>
+        </ol> -->
+
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Countries Traveled</a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">My Interests</button>
+            <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button> -->
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        <ul>
+                            <li>India</li>
+                            <li>Germany</li>
+                            <li>Malaysia</li>
+                            <li>Japan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        <ol>
+                            <li>Sailing</li>
+                            <li>Camping</li>
+                            <li>Model United Nations</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Click Me!
+        </button>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">That's all folks!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        (⌐▀͡ ̯ʖ▀) ╯︵ ┻─┻
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
